@@ -1,12 +1,12 @@
 # -*- coding: utf-* -*-
-from Proyecto.lista import *
+from tempArbol import *
 
 class Console:
 	# Crea las variables seguirCorriendo y pone el primer directorio
 	def __init__(self):
 		self.continuar = True
 		self.directorioActual = "~"
-		self.lista = ListaEnlazada("/")
+		self.arbol = Arbol()
 
     #Setters y getters del directorio actual. Esto se pensó asi para que la función correr
     #sea más dinamica en cuanto a lo que se muestre en la consola.
